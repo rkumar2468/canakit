@@ -1,5 +1,5 @@
 # canakit
-Repo with all the artifacts for pi-4
+Repo with all the artifacts for pi-4 (32 bit)
 
 
 ## Installation
