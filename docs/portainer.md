@@ -13,5 +13,5 @@ docker run --rm -v portainer_data:/data portainer/helper-reset-password
 docker container start portainer
 ```
 
-Reference:
+### Reference:
 - https://github.com/portainer/helper-reset-password
