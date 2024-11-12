@@ -36,3 +36,16 @@ services:
       - ./portainer-data:/data
     ports:
       - 9000:9000
+
+  homeassistant:
+    container_name: homeassistant
+    image: "ghcr.io/home-assistant/home-assistant:stable"
+    volumes:
+      - /home/pi/hass/config:/config
+      - /etc/localtime:/etc/localtime:ro
+      - /run/dbus:/run/dbus:ro
+    restart: unless-stopped
+    privileged: true
+    network_mode: host
+    ports:
+      - 9000:9000
